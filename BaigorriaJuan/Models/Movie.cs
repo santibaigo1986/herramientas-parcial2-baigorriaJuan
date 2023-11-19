@@ -1,4 +1,4 @@
-﻿using BaigorriaJuan.Data;
+﻿using BaigorriaJuan.Data.Enums;
 using System.ComponentModel.DataAnnotations;
 
 namespace BaigorriaJuan.Models
