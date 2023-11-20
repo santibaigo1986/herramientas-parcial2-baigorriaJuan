@@ -1,8 +1,9 @@
-﻿using BaigorriaJuan.Models;
+﻿using BaigorriaJuan.Data.Enums;
+using BaigorriaJuan.Models;
 
-namespace BaigorriaJuan.Data.Enums
+namespace BaigorriaJuan.Data
 {
-    public class AppDbInitializar
+    public class AppDbInitializer
     {
         public static void Seed(IApplicationBuilder applicationBuilder)
         {
@@ -49,7 +50,7 @@ namespace BaigorriaJuan.Data.Enums
                         },
 
                         });
-                        context.SaveChanges();
+                    context.SaveChanges();
                 }
                 //Actors
                 if (!context.Actors.Any())
@@ -209,7 +210,7 @@ namespace BaigorriaJuan.Data.Enums
                         }
                     });
                     context.SaveChanges();
-                                }
+                }
 
                 //Actors & Movies
                 if (!context.Actors_Movies.Any())
