@@ -11,10 +11,32 @@
             <thead>
                 <tr>
                     <th>@Html.DisplayNameFor(model =>model.ProfilePictureURL)</th>>
+                    <th>@Html.DisplayNameFor(model =>model.FullName)</th>>
+                    <th>@Html.DisplayNameFor(model =>model.Bio)</th>>
+                    <th>Acciones</th>>
                 </tr>
             </thead>
-            
-            <tbody></tbody>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="aling-middle">
+                            <img class="rounded-circle" src="@item.ProfilePictureURL" alt="@item.FullName" style="max-width: 150px"/>
+                        </td>
+                        <td class="alingn-middle">
+                            @Html.DisplayFor(modelItem => item.FullName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Bio)
+                        </td>
+                        <td class="aling-middle">
+                            <a class="btn btn-outline-primary"><i class="bi bi-pencil-square"></i>Edit </a>
+                            <a class="btn btn-outline-info"><i class="bi bi-eye"></i>Detalles </a>
+                            <a class="btn btn-danger text-white"><i class="bi bi-trash"></i>Eliminar </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
             
 
 
