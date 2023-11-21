@@ -5,47 +5,47 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BaigorriaJuan.Models
 {
-    public class NewMovieVM1
+    public class NewMovieVM
     {
-        [Display(Name = "Nombre de la Pelicula")]
-        [Required(ErrorMessage = "Nombre es requerido required")]
+        [Display(Name = "Movie name")]
+        [Required(ErrorMessage = "Name is required")]
         public string Name { get; set; }
 
-        [Display(Name = "Descripcion")]
-        [Required(ErrorMessage = "Descripcion es Obligatorio")]
+        [Display(Name = "Movie description")]
+        [Required(ErrorMessage = "Description is required")]
         public string Description { get; set; }
 
-        [Display(Name = "Precio en $")]
-        [Required(ErrorMessage = "Precio es obligatorio")]
+        [Display(Name = "Price in $")]
+        [Required(ErrorMessage = "Price is required")]
         public double Price { get; set; }
 
-        [Display(Name = "URL")]
-        [Required(ErrorMessage = "El URL es obligatorio")]
+        [Display(Name = "Movie poster URL")]
+        [Required(ErrorMessage = "Movie poster URL is required")]
         public string ImageURL { get; set; }
 
-        [Display(Name = "Inicio")]
-        [Required(ErrorMessage = "Inicio es obligatorio")]
+        [Display(Name = "Movie start date")]
+        [Required(ErrorMessage = "Start date is required")]
         public DateTime StartDate { get; set; }
 
-        [Display(Name = "Final")]
-        [Required(ErrorMessage = "Final es obligatorio")]
+        [Display(Name = "Movie end date")]
+        [Required(ErrorMessage = "End date is required")]
         public DateTime EndDate { get; set; }
 
-        [Display(Name = "Seleccione Categoria")]
-        [Required(ErrorMessage = "Categoria es obligatoria")]
+        [Display(Name = "Select a category")]
+        [Required(ErrorMessage = "Movie category is required")]
         public MovieCategory MovieCategory { get; set; }
 
         //Relationships
-        [Display(Name = "Seleccione actor(es)")]
-        [Required(ErrorMessage = "Los actor(es) es obligatorio")]
+        [Display(Name = "Select actor(s)")]
+        [Required(ErrorMessage = "Movie actor(s) is required")]
         public List<int> ActorIds { get; set; }
 
-        [Display(Name = "Seleccione Cine")]
-        [Required(ErrorMessage = "Cine es Obligatorio")]
+        [Display(Name = "Select a cinema")]
+        [Required(ErrorMessage = "Movie cinema is required")]
         public int CinemaId { get; set; }
 
-        [Display(Name = "Seleccione Productor")]
-        [Required(ErrorMessage = "Productor es obligatorio")]
+        [Display(Name = "Select a producer")]
+        [Required(ErrorMessage = "Movie producer is required")]
         public int ProducerId { get; set; }
     }
 }

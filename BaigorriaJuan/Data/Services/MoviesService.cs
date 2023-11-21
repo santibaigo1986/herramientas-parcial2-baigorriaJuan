@@ -1,10 +1,12 @@
 ﻿using BaigorriaJuan.Data.Base;
+using BaigorriaJuan.Data.ViewModels;
 using BaigorriaJuan.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace BaigorriaJuan.Data.Services
 {
-    public class MoviesService : EntityBaseRepository<NewMovieVM>, IMoviesService
+    public class MoviesService : EntityBaseRepository<Movie>, IMoviesService
     {
         private readonly AppDbContext _context;
         public MoviesService(AppDbContext context) : base(context)
@@ -12,7 +14,7 @@ namespace BaigorriaJuan.Data.Services
             _context = context;
         }
 
-        public async Task<NewMovieVM> GetMovieByIdAsync(int id)
+        public async Task<Movie> GetMovieByIdAsync(int id)
         {
             var movieDetails = await _context.Movies
                 .Include(c => c.Cinema)
@@ -21,6 +23,18 @@ namespace BaigorriaJuan.Data.Services
                 .FirstOrDefaultAsync(n => n.Id == id);
 
             return movieDetails;
+        }
+
+        public async Task<NewMovieDropdownsVM> GetNewMovieDropdownsValues()
+        {
+            var response = new NewMovieDropdownsVM()
+            {
+                Actors = await _context.Actors.OrderBy(n => n.FullName).ToListAsync(),
+                Cinemas = await _context.Cinemas.OrderBy(n => n.Name).ToListAsync(),
+                Producers = await _context.Producers.OrderBy(n => n.FullName).ToListAsync()
+            };
+
+            return response;
         }
     }
 }

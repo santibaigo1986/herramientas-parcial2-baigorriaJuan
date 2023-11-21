@@ -1,6 +1,7 @@
 ﻿using BaigorriaJuan.Data;
 using BaigorriaJuan.Data.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace BaigorriaJuan.Controllers
@@ -19,6 +20,7 @@ namespace BaigorriaJuan.Controllers
             var allMovies = await _service.GetAllAsync(n => n.Cinema);
             return View(allMovies);
         }
+
         //GET: Movies/Details/1
         public async Task<IActionResult> Details(int id)
         {
@@ -27,13 +29,15 @@ namespace BaigorriaJuan.Controllers
         }
 
         //GET: Movies/Create
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
-            ViewData["Welcome"] = "Bienvenidos a Nuestra Tienda";
-            ViewBag.Description = "Esta es la Descripcion de la tienda";
+            var movieDropdownsData = await _service.GetNewMovieDropdownsValues();
+
+            ViewBag.Cinemas = new SelectList(movieDropdownsData.Cinemas, "Id", "Name");
+            ViewBag.Producers = new SelectList(movieDropdownsData.Producers, "Id", "FullName");
+            ViewBag.Actors = new SelectList(movieDropdownsData.Actors, "Id", "FullName");
 
             return View();
         }
     }
 }
-    
