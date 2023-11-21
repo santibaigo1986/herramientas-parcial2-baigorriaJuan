@@ -19,7 +19,8 @@ namespace BaigorriaJuan.Controllers
             var data = await _service.GetAll();
             return View(data);
         }
-        //Get: Actors/Crear
+
+        //Get: Actors/Create
         public IActionResult Create()
         {
             return View();
@@ -34,15 +35,6 @@ namespace BaigorriaJuan.Controllers
             }
             _service.Add(actor);
             return RedirectToAction(nameof(Index));
-        }
-
-        //Get: Actors/Details/1
-        public async Task<IActionResult> Details(int id)
-        {
-            var actorDetails = await _service.GetByIdAsync(id);
-
-            if (actorDetails == null) return View("Empty");
-            return View(actorDetails);
         }
     }
 }
