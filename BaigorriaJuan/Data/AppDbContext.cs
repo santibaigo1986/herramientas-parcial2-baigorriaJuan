@@ -33,7 +33,7 @@ namespace BaigorriaJuan.Data
         // Definición de DbSet para las entidades Actor , Movie, Actor_Movie, Cinema y Producer .
         public DbSet<Actor> Actors { get; set; }
 
-        public DbSet<Movie> Movies { get; set; }
+        public DbSet<NewMovieVM> Movies { get; set; }
 
         public DbSet<Actor_Movie> Actors_Movies { get; set; }
 

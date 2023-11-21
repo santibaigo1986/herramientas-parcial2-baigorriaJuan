@@ -134,9 +134,9 @@ namespace BaigorriaJuan.Data
                 //Movies
                 if (!context.Movies.Any())
                 {
-                    context.Movies.AddRange(new List<Movie>()
+                    context.Movies.AddRange(new List<NewMovieVM>()
                     {
-                        new Movie()
+                        new NewMovieVM()
                         {
                             Name = "Life",
                             Description = "Esta es la descripción de la película Life",
@@ -148,7 +148,7 @@ namespace BaigorriaJuan.Data
                             ProducerId = 3,
                             MovieCategory = MovieCategory.Documentary
                         },
-                        new Movie()
+                        new NewMovieVM()
                         {
                             Name = "The Shawshank Redemption",
                             Description = "Esta es la descripción de la película The Shawshank Redemption",
@@ -160,7 +160,7 @@ namespace BaigorriaJuan.Data
                             ProducerId = 1,
                             MovieCategory = MovieCategory.Action
                         },
-                        new Movie()
+                        new NewMovieVM()
                         {
                             Name = "Ghost",
                             Description = "Esta es la descripción de la película Ghost",
@@ -172,7 +172,7 @@ namespace BaigorriaJuan.Data
                             ProducerId = 4,
                             MovieCategory = MovieCategory.Horror
                         },
-                        new Movie()
+                        new NewMovieVM()
                         {
                             Name = "Race",
                             Description = "Esta es la descripción de la película Race",
@@ -184,7 +184,7 @@ namespace BaigorriaJuan.Data
                             ProducerId = 2,
                             MovieCategory = MovieCategory.Documentary
                         },
-                        new Movie()
+                        new NewMovieVM()
                         {
                             Name = "Scoob",
                             Description = "Esta es la descripción de la película Scoob",
@@ -196,7 +196,7 @@ namespace BaigorriaJuan.Data
                             ProducerId = 3,
                             MovieCategory = MovieCategory.Cartoon
                         },
-                        new Movie()
+                        new NewMovieVM()
                         {
                             Name = "Cold Soles",
                             Description = "Esta es la descripción de la película Cold Soles",

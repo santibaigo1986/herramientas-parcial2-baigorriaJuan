@@ -19,6 +19,6 @@ namespace BaigorriaJuan.Models
         public string Bio { get; set; }
 
         //Relationships
-        public List<Movie> Movies { get; set; }
+        public List<NewMovieVM> Movies { get; set; }
     }
 }

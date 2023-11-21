@@ -1,10 +1,11 @@
-﻿using BaigorriaJuan.Data.Enums;
+﻿using BaigorriaJuan.Data.Base;
+using BaigorriaJuan.Data.Enums;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BaigorriaJuan.Models
 {
-    public class Movie
+    public class NewMovieVM:IEntityBase
     {
         [Key]
         public int Id { get; set; }
