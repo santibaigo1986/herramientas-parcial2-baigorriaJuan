@@ -5,7 +5,7 @@ namespace BaigorriaJuan.Data
 {
     public class AppDbContext : DbContext
     {
-        // Constructor que toma opciones de configuración para el contexto de la base de datos.
+        // Constructor que toma opciones de configuración para el contexto de la BD.
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
         }
@@ -39,7 +39,7 @@ namespace BaigorriaJuan.Data
 
         public DbSet<Cinema> Cinemas { get; set; }
 
-        public DbSet<Producer> Prducers { get; set; }
+        public DbSet<Producer> Producers { get; set; }
     }
 
 }

@@ -16,12 +16,28 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Baigo\OneDrive\Escritorio\MoviesMVC\BaigorriaJuan\BaigorriaJuan
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Baigo/OneDrive/Escritorio/MoviesMVC/BaigorriaJuan/BaigorriaJuan/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/Baigo/OneDrive/Escritorio/MoviesMVC/BaigorriaJuan/BaigorriaJuan/Views/Actors/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0b3JzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Baigo/OneDrive/Escritorio/MoviesMVC/BaigorriaJuan/BaigorriaJuan/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/Baigo/OneDrive/Escritorio/MoviesMVC/BaigorriaJuan/BaigorriaJuan/Views/Actors/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0b3JzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Baigo/OneDrive/Escritorio/MoviesMVC/BaigorriaJuan/BaigorriaJuan/Views/Actors/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0b3JzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Baigo/OneDrive/Escritorio/MoviesMVC/BaigorriaJuan/BaigorriaJuan/Views/Cinemas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2luZW1hc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Baigo/OneDrive/Escritorio/MoviesMVC/BaigorriaJuan/BaigorriaJuan/Views/Movies/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Baigo/OneDrive/Escritorio/MoviesMVC/BaigorriaJuan/BaigorriaJuan/Views/Producers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Baigo/OneDrive/Escritorio/MoviesMVC/BaigorriaJuan/BaigorriaJuan/Views/Shared/Error.cshtml]
