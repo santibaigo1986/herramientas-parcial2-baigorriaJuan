@@ -1,8 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using BaigorriaJuan.Data.Base;
+using System.ComponentModel.DataAnnotations;
 
 namespace BaigorriaJuan.Models
 {
-    public class Producer
+    public class Producer:IEntityBase
     {
         [Key]
         public int Id { get; set; }
